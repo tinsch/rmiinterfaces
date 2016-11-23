@@ -2,6 +2,12 @@ package rmi.interfaces;
 
 public interface CalculatorInterface extends java.rmi.Remote {
 	
-	int add(int x, int y) throws java.rmi.RemoteException;
+	Double add(Double x, Double y) throws java.rmi.RemoteException;
+	
+	Double subtract(Double x, Double y) throws java.rmi.RemoteException;
+	
+	Double multiply(Double x, Double y) throws java.rmi.RemoteException;
+	
+	Double divide(Double x, Double y) throws java.rmi.RemoteException;
 
 }
